@@ -5,8 +5,8 @@ package refs;
  */
 public class Refs {
     public static void main(String[] args) {
-        int a = 1;
-        int b = a;
+        Integer a = 1;
+        Integer b = a;
 
         a = 4;
 
@@ -20,9 +20,10 @@ public class Refs {
         System.out.println("CCCCC: " + c);
 
         Person person = new Person("Zenon", 50);
+        Person person2 = person;
         refs.changeAge(person);
 
-        System.out.println("Person: " + person);
+        System.out.println("Person: " + person2);
     }
 
     private void increase(Integer i) {
